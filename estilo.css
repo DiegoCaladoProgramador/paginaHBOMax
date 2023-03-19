@@ -5,17 +5,56 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0px;
-    padding: 0px;
-    background-color: #0F0F0F;
+    background-image: url(assets/images/background.png);
+    background-size: 1380px;
     color: #FFFFFF;
     font-family: 'Inter';
     font-style: normal;
 }
 
-header {
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+header .leftHeader {
+    display: flex;
+}
+
+header .leftHeader #vetores{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 50px;
+    margin-right: 34px;
+}
+
+header .leftHeader #vetores img{
+    margin-bottom: 5px;
+}
+
+.vetMenor{
+    width: 30px;
+    border-radius: 25px;
+}
+
+.vetMaior{
+    width: 39px;
+    border-radius: 25px;
+}
+
+header .rightHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+header .rightHeader a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
 }
 
 header h5 {
@@ -37,6 +76,15 @@ header button {
     border: 0px;
 }
 
+body h1 {
+    margin-top: 100px;
+}
+
+body #pergunta{
+    font-size: 29px;
+    margin-bottom: 93px;
+}
+
 #botao {
     display: flex;
     flex-direction: column;
@@ -50,7 +98,6 @@ form {
 }
 
 form input {
-    width: 280px;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -58,6 +105,11 @@ form input {
     background-color: #7F7F7F;
     border-radius: 25px;
     height: 25px;
+    color: #FFFFFF;
+    padding-left: 37px;
+    border-width: 0px;
+    opacity: 0.8;
+    
 }
 
 form label{
@@ -76,8 +128,9 @@ form input[type="submit"]{
 }
 
 .submit{
-    background-color: #8C77E0;
-    color: white;
+    background-color: A18CD1; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #A18CD1 , #FBC2EB);
+    color: black;
     border-radius: 25px;
     border: 0px;
     cursor: pointer;
